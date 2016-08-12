@@ -1,0 +1,2 @@
+export manager_token=SWMTKN-1-07aa3oz7rzq7bjwq95fza31wpp36l4zajqwp4p7de0jptccnuy-4tw2kufrxjxkz624feq54kik9
+export worker_token=SWMTKN-1-07aa3oz7rzq7bjwq95fza31wpp36l4zajqwp4p7de0jptccnuy-ait1xm7tmmscgjq6q07vhz346

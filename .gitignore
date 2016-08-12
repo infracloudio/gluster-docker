@@ -1,0 +1,18 @@
+# ignore .bak files created by ultraedit
+*.bak
+
+#ignore .box files
+*.box
+
+# ignore .git folder
+.git/**/*
+
+# ignore .vagrant folder
+.vagrant/**/*
+
+*.zip
+
+postgresViewer/**
+
+
+
