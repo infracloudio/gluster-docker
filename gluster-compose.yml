@@ -8,7 +8,7 @@ services:
     command: /bin/true
     
   postgresdb:
-    image: "harshals/mypostgres:1.3"
+    image: "harshals/mypostgres:1.4"
     container_name: postgresdb
     volumes_from:
       - postgresdata
@@ -33,6 +33,7 @@ services:
       - POSTGRES_HOST=postgres
   web:
     restart: always
+    container_name: "web"
     image: "harshals/web:1.0"
     expose:
       - "8000"

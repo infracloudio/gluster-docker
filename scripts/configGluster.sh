@@ -20,6 +20,10 @@ fi
 
 if [[ $1 = step2 ]]; then
   if [[ $HOST = manager01 ]]; then
+    sudo gluster volume stop gfsvol1
+    sudo gluster volume delete gfsvol1
+    
+    echo "Volume deleted, now creating again ";
     sudo gluster volume create gfsvol1 replica 3 transport tcp manager01:/run/user/gluster/fs01 worker01:/run/user/gluster/fs01 worker02:/run/user/gluster/fs01
     sudo gluster volume start gfsvol1
   fi
