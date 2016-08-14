@@ -19,7 +19,7 @@ services:
       - POSTGRES_USER=mypguser
       - POSTGRES_DB=flktstdb
   pgwriter:
-    image: "harshals/postgreswriter:1.2"
+    image: "harshals/postgreswriter:1.3"
     container_name: "pgwriter"
     links:
       - "postgresdb:postgres"
